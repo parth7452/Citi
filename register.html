@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="register-page">
+    <nav>
+        <a href="index.html" class="nav-icon"><img class="nav-icon" src="logo.png" alt="logo"></a>
+        <a href="register.html" class="nav-button">Start an Engagement!</a>
+        <a href="index.html" class="nav-button">My Movements</a>
+        <a href="about.html" class="nav-button">About</a>
+        <a href="browse.html" class="nav-button">Browse</a>
+        <a href="user-profile.html" class="nav-button">User Profile</a>
+    </nav>
+
+    <section class="register-container">
+        <h2 class="register-title">Create a Movement</h2>
+        <form id="movement-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="photo">Photo URL:</label>
+            <input type="url" id="photo" name="photo" required>
+
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" required></textarea>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="Just Started!">Just Started!</option>
+                <option value="Planning">Planning</option>
+                <option value="Fundraising">Fundraising</option>
+                <option value="Gathering Resources">Gathering Resources</option>
+                <option value="Reaching out to lobbyists">Reaching out to lobbyists</option>
+                <option value="Writing down documents">Writing down documents</option>
+                <option value="Ready to present">Ready to present</option>
+            </select>
+
+            <label for="members">Members:</label>
+            <input type="number" id="members" name="members" required>
+
+            <label for="advocates">Advocates:</label>
+            <input type="number" id="advocates" name="advocates" required>
+
+            <button class="create-movement-btn" type="submit">Create Movement</button>
+        </form>
+
+        <div id="success-message" style="display: none;">
+            <p>Movement created successfully!</p>
+            <a href="index.html" class="nav-button">Go Back Home</a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
